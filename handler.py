@@ -7,8 +7,8 @@ from pyannote.audio import Pipeline  # For diarization
 
 # Env vars (set in RunPod)
 HF_TOKEN = os.getenv("HF_TOKEN","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")
-WHISPER_MODEL = os.getenv("WHISPER_MODEL", "small")
-BATCH_SIZE = int(os.getenv("BATCH_SIZE", 16))
+WHISPER_MODEL = os.getenv("WHISPER_MODEL", "base")
+BATCH_SIZE = int(os.getenv("BATCH_SIZE", 8))
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 def handler(event):
