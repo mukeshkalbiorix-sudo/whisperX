@@ -1,1 +1,4 @@
 runpod
+faster-whisper
+pyannote.audio
+# WhisperX will install its own deps via git install
